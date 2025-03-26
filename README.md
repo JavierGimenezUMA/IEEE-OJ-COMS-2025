@@ -14,10 +14,11 @@ This repository contains:
   - The optimal set of coefficients to generate the pulse: $\boldsymbol{\epsilon}_{k,i}$
 - ⚙️ **Scripts** (/scripts/): There is one MATLAB script per curve, which are grouped in folders according to the Fig. they belong to. Each script loads one of the datasets in and generates the curve.
 
-📜 These materials are provided for the sake of reproducibility of the results in out paper. Readers are encouraged to utilize them under the terms of the journal and this respository's license.
+📜 These materials are provided for the sake of reproducibility of the results in our paper. Readers are encouraged to utilize them under the terms of the journal and this respository's license.
 
- ## Requriements
+ ## Requirements
  To run the scripts, it is required:
+ 
  ✔️ MATLAB R2022b (or later)
 
 
