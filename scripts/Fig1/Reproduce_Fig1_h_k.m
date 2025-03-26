@@ -3,7 +3,7 @@ clear, close all
 % %                 LOAD THE PARAMETERS                   % %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%
 
-load('Fig1_Parameters_for_h_k.mat');
+load('../../data/Fig1/Fig1_Parameters_for_h_k.mat');
 
 N = OFDM_param.N;
 Ngi = OFDM_param.Ngi;
