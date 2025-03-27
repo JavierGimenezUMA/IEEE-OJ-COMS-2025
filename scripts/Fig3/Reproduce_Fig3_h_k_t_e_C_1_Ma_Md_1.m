@@ -110,7 +110,7 @@ y_p = 10*log10(psd_P/max(psd_P));
 
 % Fig 3 (Yellow curve)
 figure,
-plot(x(indices),y_h(indices), 'DisplayName', 'h_k^{t-e}(C_1; M_a=M_d=1) [7]', 'Color', "#0072BD"); hold on; grid on;
+plot(x(indices),y_h(indices), 'DisplayName', 'h_k^{t-e}(C_1; M_a=M_d=1)', 'Color', "#0072BD"); hold on; grid on;
 plot(x(indices),y_p(indices), 'DisplayName', 'RC pulse-shaping', 'Color', 'r');
 xlabel('Carrier index (k)'); ylabel('Normalized PSD (dB)'); legend('show')
 xlim([3006, 3086]); ylim([-70,0])
