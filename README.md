@@ -1,6 +1,6 @@
 # Datasets and Scripts for "Spectral Shaping Method for OFDM Combining Time-shifted Active Interference Cancellation and Adaptive Symbol Transition"
 
-**This repository contains datasets and MATLAB scripts to generate the curves presented in the figures of our paper. Only the results corresponding to the method we propose can be generated with these materials:**
+**This repository contains datasets and MATLAB scripts to generate the curves presented in the figures of our paper. Only the results corresponding to the method we propose can be generated with these materials.**
 
 📄 **"Spectral Shaping Method for OFDM Combining Time-shifted Active Interference Cancellation and Adaptive Symbol Transition"**, submitted to **IEEE Open Journal of the Communications Society**, 2025
 
