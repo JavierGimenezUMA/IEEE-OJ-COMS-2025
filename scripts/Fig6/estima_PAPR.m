@@ -18,7 +18,7 @@ function [ccdf, papr, mean_papr] = estima_PAPR(h, L, b, NexTemp, num_tandas, num
     amp_max_2 = zeros(1,num_sim_tanda*num_tandas-num_tandas*2);
 
 
-    textprogressbar('Tandas: ');
+    textprogressbar('Rounds: ');
     for ind_tanda = 1:num_tandas
         textprogressbar(100*ind_tanda/num_tandas);
         x=zeros(1,num_sim_tanda*L+b+2*L*NexTemp);    %Ahora tendremos NexTemp pulsos adicionales antes y despues de los pulsos con datos
