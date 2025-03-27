@@ -3,7 +3,7 @@ clear,
 % %                 LOAD THE PARAMETERS                   % %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%
 addpath('../../data/Fig4')
-load('Fig4_Parameters_for_h_k_t_e_[C_3_Ma_Md_1].mat');
+load('Fig4_Parameters_for_h_k_[C_4]_[7].mat');
 
 N = OFDM_param.N;
 Ngi = OFDM_param.Ngi;
@@ -58,7 +58,7 @@ for ind_k = 1:length(Pd);
     for ind_m = 1:NexTemp;                                                                              % ADVANCED AND DELAYED TERMS
         aic_k(((NexTemp-ind_m)*L+1):((NexTemp-ind_m+1)*L+b),Pd(ind_k)+N/2+1) = aic_k(((NexTemp-ind_m)*L+1):((NexTemp-ind_m+1)*L+b),Pd(ind_k)+N/2+1) + sum(aic_temp(:,(length(Paic{ind_k})*(1+m_temp)) + (1:length(Paic{ind_k}))),2);
         aic_k(((NexTemp+ind_m)*L+1):((NexTemp+ind_m+1)*L+b),Pd(ind_k)+N/2+1) = aic_k(((NexTemp+ind_m)*L+1):((NexTemp+ind_m+1)*L+b),Pd(ind_k)+N/2+1) + sum(aic_temp(:,(length(Paic{ind_k})*(1+m_temp+1)) + (1:length(Paic{ind_k}))),2);
-        m_temp = m_temp+2;
+        m_temp = m_temp+1;
     end
     
     % % AST terms
@@ -110,7 +110,7 @@ y_p = 10*log10(psd_P/max(psd_P));
 
 % Fig 3 (Yellow curve)
 figure,
-plot(x(indices),y_h(indices), 'DisplayName', 'h_k^{t-e}(C_1; M_a=M_d=1) [7]', 'Color', "#EDB120"); hold on; grid on;
+plot(x(indices),y_h(indices), 'DisplayName', 'h_k^{t-e}(C_3; M_a=M_d=1) [7]', 'Color', "#0072BD"); hold on; grid on;
 plot(x(indices),y_p(indices), 'DisplayName', 'RC pulse-shaping', 'Color', 'r');
 xlabel('Carrier index (k)'); ylabel('Normalized PSD (dB)'); legend('show')
 xlim([3006, 3086]); ylim([-100,0])
