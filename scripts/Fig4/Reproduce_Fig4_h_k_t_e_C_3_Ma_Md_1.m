@@ -3,7 +3,7 @@ clear,
 % %                 LOAD THE PARAMETERS                   % %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%
 addpath('../../data/Fig4')
-load('Fig4_Parameters_for_h_k_[C_4]_[7].mat');
+load('Fig4_Parameters_for_h_k_t_e_[C_3_Ma_Md_1].mat');
 
 N = OFDM_param.N;
 Ngi = OFDM_param.Ngi;
