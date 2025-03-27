@@ -4,7 +4,7 @@ clear, close all
 % %  PAPR ESTIMATION PARAMETER  % %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%
 
-n_rounds = 10;          % Number of rounds of symbols simulated
+n_rounds = 20;          % Number of rounds of symbols simulated
 n_sym_per_round = 5e3;  % Number of symbols per round
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
