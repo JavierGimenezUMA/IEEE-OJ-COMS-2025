@@ -27,6 +27,6 @@ This repository contains:
  2. Open MATLAB and navigate to main/
  3. Add /scripts/ and /data/ to the workspace's path
  4. Run the script
- 5. The corresponding curve should be plotted
+ 5. The corresponding curve(s) should be plotted
  
 
