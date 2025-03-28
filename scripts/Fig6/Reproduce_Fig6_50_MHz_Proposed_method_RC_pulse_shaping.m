@@ -119,4 +119,4 @@ figure,
 semilogy(x_p,y_p, 'DisplayName', 'RC pulse shaping (50 MHz)', 'Color', 'r'); hold on;
 semilogy(x_h,y_h, 'DisplayName', 'Proposed method (50 MHz)', 'Color', "#0072BD"); grid on;
 xlabel('PAPR (dB)'); ylabel('CCDF'); legend('show')
-xlim([6,13]); ylim([1e-4,1])
+xlim([6,12.5]); ylim([1e-4,1])
