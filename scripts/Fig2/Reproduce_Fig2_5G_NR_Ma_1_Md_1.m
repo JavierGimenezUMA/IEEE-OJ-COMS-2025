@@ -113,9 +113,9 @@ y_p = 10*log10(psd_P/max(psd_P));
 PSD_max = max(max(y_h(find(x>Pd_todas(end)+N/2+1.67))), max(y_h(find(x<Pd_todas(1)+N/2-1.67)))); %% PSD_MAX IS SOUGHT BEYOND THE 0.67 SCS GUARD BAND THAT IS LEFT BY EACH SIDE
 x_PSD_max = x(find(y_h==PSD_max));
 
-% Fig 2 (5G NR Ma=0, Md=1)
+% Fig 2 (5G NR Ma=1, Md=1)
 figure,
-plot(x(indices),y_h(indices), 'DisplayName', 'h_k^{t-e}(M_a=0, M_d=1)', 'Color', "#4DBEEE"); hold on; grid on;
+plot(x(indices),y_h(indices), 'DisplayName', 'h_k^{t-e}(M_a=1, M_d=1)', 'Color', "#4DBEEE"); hold on; grid on;
 plot(x(indices),y_p(indices), 'DisplayName', 'RC pulse-shaping', 'Color', 'r');
 plot(x_PSD_max, PSD_max, 'Marker', 'x', 'Color', 'k', 'LineStyle', 'none','LineWidth',1, 'DisplayName', ['PSD_{max} = ', num2str(PSD_max, '%.2f'), ' dB'])
 xlabel('Carrier index (k)'); ylabel('Normalized PSD (dB)'); legend('show')
