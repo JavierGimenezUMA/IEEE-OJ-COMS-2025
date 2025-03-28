@@ -130,6 +130,7 @@ plot(x(indices),y_p(indices), 'DisplayName', 'RC pulse-shaping', 'Color', 'r');
 plot(x_PSD_max, PSD_max, 'Marker', 'x', 'Color', 'k', 'LineStyle', 'none','LineWidth',1, 'DisplayName', ['PSD_{max} = ', num2str(PSD_max, '%.2f'), ' dB'])
 xlabel('Carrier index (k)'); ylabel('Normalized PSD (dB)'); legend('show')
 xlim(x_PSD_max+[-20,20]); ylim([-60,0])
+title('Fig.2 - 5G NR')
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %     CLARIFYING NOTE     % %
