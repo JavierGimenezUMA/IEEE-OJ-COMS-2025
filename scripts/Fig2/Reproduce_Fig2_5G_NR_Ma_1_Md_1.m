@@ -115,7 +115,7 @@ x_PSD_max = x(find(y_h==PSD_max));
 
 % Fig 2 (5G NR Ma=1, Md=1)
 figure,
-plot(x(indices),y_h(indices), 'DisplayName', 'h_k^{t-e}(M_a=1, M_d=1)', 'Color', "#4DBEEE"); hold on; grid on;
+plot(x(indices),y_h(indices), 'DisplayName', 'h_k^{t-e}(M_a=M_d=1)', 'Color', "#4DBEEE"); hold on; grid on;
 plot(x(indices),y_p(indices), 'DisplayName', 'RC pulse-shaping', 'Color', 'r');
 plot(x_PSD_max, PSD_max, 'Marker', 'x', 'Color', 'k', 'LineStyle', 'none','LineWidth',1, 'DisplayName', ['PSD_{max} = ', num2str(PSD_max, '%.2f'), ' dB'])
 xlabel('Carrier index (k)'); ylabel('Normalized PSD (dB)'); legend('show')
