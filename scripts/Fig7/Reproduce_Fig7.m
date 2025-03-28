@@ -117,7 +117,7 @@ load('Fig7_Parameters_for_PSD_mask_EN_50561_1.mat', 'eje_f_Btot', 'eje_PSD_Btot'
 figure,
 plot(eje_f_Btot+N/2, eje_PSD_Btot, 'DisplayName', 'PSD mask EN 50561-1', 'Color', 'k'); hold on; grid on;
 plot(x(indices),y_p(indices), 'DisplayName', 'RC pulse-shaping', 'Color', 'r');
-plot(x(indices),y_h(indices), 'DisplayName', 'h_k^{t-e}(C_1; M_a=M_d=1) [7]', 'Color', "#0072BD"); 
+plot(x(indices),y_h(indices), 'DisplayName', 'h_k^{t-e}(C_5; M_a=M_d=1) [7]', 'Color', "#0072BD"); 
 xlabel('Carrier index (k)'); ylabel('Normalized PSD (dB)'); legend('show','Location', 'southwest')
 xlim([500, 630]); ylim([-58,0])
 
