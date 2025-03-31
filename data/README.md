@@ -16,13 +16,15 @@ Parameters that appear just in the scripts
 - us, ue: time-domain pulses of length $\beta$ that are non-zero just in the starting and ending region of the pulse, respectively
 
 ### GenPulse_param
-Parameters that define the generalized pulse
-- Pd: vector containing the indices of all the data carriers that use the generalized pulse (all the indices in $\mathcal{D}^\textrm{h}$)
+Parameters that define the proposed pulse
+- Pd: vector containing the indices of all the data carriers that use the proposed pulse (all the indices in $\mathcal{D}^\textrm{h}$)
 - Pd_todas: vector containing the indices of all the data carriers (all the indices in $\mathcal{D}$)
-- Paic: cell array with one entry per index in Pd. Each entry contains the indices of the CC employed by the corresponding generalized pulse
+- Paic: cell array with one entry per index in Pd. Each entry contains the indices of the CC employed by the corresponding proposed pulse
 - Ptk: cell array with one entry per index in Pd. Each entry contains the indices of the terms used in the harmonic design of the transition pulses
-- NexTemp_a/NexTemp_d: Number of advanced/delayed terms the generalized pulse has ($M_{\textrm{a}}/M_{\textrm{d}}$)
-- NexTemp: Number of advanced and delayed terms the generalized pulse has when it is defined with Hermitian symmetry ($M_{\textrm{a}}=M_{\textrm{d}}$)
-- R_aic: Cell array with one entry per index in Pd. Each entry contains the optimal coefficients $\alpha_{k,i}$ for one generalized pulse
-- R_tk: Cell array with one entry per index in Pd. Each entry contains the optimal coefficients $\zeta_{k,i}$ for one generalized pulse ($\xi_{k,i}$ if transition pulses are harmonically designed)
+- NexTemp_a/NexTemp_d: Number of advanced/delayed terms the proposed pulse has ($M_{\textrm{a}}/M_{\textrm{d}}$)
+- NexTemp: Number of advanced and delayed terms the proposed pulse has when it is defined with Hermitian symmetry ($M_{\textrm{a}}=M_{\textrm{d}}$)
+- R_aic: Cell array with one entry per index in Pd. Each entry contains the optimal coefficients $\alpha_{k,i}$ for one proposed pulse
+- R_tk: Cell array with one entry per index in Pd. Each entry contains the optimal coefficients $\zeta_{k,i}$ for one proposed pulse ($\xi_{k,i}$ if transition pulses are harmonically designed)
 - cell_coef_lim: Cell array with one entry per index in Pd. Each entry contains the bounds used to limit the coefficients' magnitude in the optimization procedure.
+
+![alt text](https://github.com/ "Content of one of the entries of cell_coef_lim when the pulse has Hermitian symmetry")
