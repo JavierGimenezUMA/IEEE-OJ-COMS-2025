@@ -27,4 +27,11 @@ Parameters that define the proposed pulse
 - R_tk: Cell array with one entry per index in Pd. Each entry contains the optimal coefficients $\zeta_{k,i}$ for one proposed pulse ($\xi_{k,i}$ if transition pulses are harmonically designed)
 - cell_coef_lim: Cell array with one entry per index in Pd. Each entry contains the bounds used to limit the coefficients' magnitude in the optimization procedure.
 
-![alt text](https://github.com/ "Content of one of the entries of cell_coef_lim when the pulse has Hermitian symmetry")
+The way the coefficients' bounds are arranged in the entries of cell_coef_lim depends on whether the proposed pulse has Hermitian symmetry or not. When it is designed with Hermitian symmetry, it is:
+
+![alt text](https://github.com/JavierGimenezUMA/IEEE-OJ-COMS-2025/blob/main/data/Bounds_vector_Hermitian_pulse.PNG "Content of one of the entries of cell_coef_lim when the pulse has Hermitian symmetry")
+
+where 
+
+
+When the proposed pulse is not designed with Hermitian symmetry, the boundsa are arranged as follows
