@@ -42,3 +42,5 @@ and
 depending on whether the transition pulses are regularly designed (first definition) or harmonically designed (second definition)
 
 When the proposed pulse is not designed with Hermitian symmetry, the boundsa are arranged as follows
+
+![alt text](https://github.com/JavierGimenezUMA/IEEE-OJ-COMS-2025/blob/main/data/Bounds_vector_Regular_pulse.PNG "Content of one of the entries of cell_coef_lim when the pulse does not have Hermitian symmetry")
