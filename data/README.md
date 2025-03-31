@@ -33,5 +33,12 @@ The way the coefficients' bounds are arranged in the entries of cell_coef_lim de
 
 where 
 
+![alt text](https://github.com/JavierGimenezUMA/IEEE-OJ-COMS-2025/blob/main/data/Epsilon_vector.PNG "Definition for the epsilon vector of bounds")
+
+and
+
+![alt text](https://github.com/JavierGimenezUMA/IEEE-OJ-COMS-2025/blob/main/data/Delta_vector.PNG "Definition for the delta vector of bounds")
+
+depending on whether the transition pulses are regularly designed (first definition) or harmonically designed (second definition)
 
 When the proposed pulse is not designed with Hermitian symmetry, the boundsa are arranged as follows
